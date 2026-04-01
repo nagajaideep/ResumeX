@@ -1,8 +1,0 @@
-fastapi
-uvicorn[standard]
-python-multipart
-pdfplumber
-python-docx
-google-genai
-httpx
-python-dotenv
