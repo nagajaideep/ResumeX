@@ -67,7 +67,7 @@ Output the filled LaTeX document now:"""
         client = genai.Client(api_key=GEMINI_API_KEY)
 
         response = client.models.generate_content(
-            model="gemini-2.5-flash",
+            model="gemini-flash-latest",
             contents=prompt,
         )
 
@@ -81,7 +81,7 @@ Output the filled LaTeX document now:"""
             import google.generativeai as old_genai
 
             old_genai.configure(api_key=GEMINI_API_KEY)
-            model = old_genai.GenerativeModel("gemini-1.5-flash")
+            model = old_genai.GenerativeModel("models/gemini-flash-latest")
             response = model.generate_content(prompt)
             result = response.text
 
@@ -91,7 +91,7 @@ Output the filled LaTeX document now:"""
             # Last fallback: use httpx to call REST API directly
             import httpx
 
-            url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key={GEMINI_API_KEY}"
+            url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent?key={GEMINI_API_KEY}"
 
             payload = {
                 "contents": [{"parts": [{"text": prompt}]}],
