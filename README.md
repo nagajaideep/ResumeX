@@ -1,7 +1,7 @@
-# ResumeX — Resume Format Transformer
+# ShiftCV — Resume Format Transformer
 
 Upload your current resume (PDF/DOCX) and a desired LaTeX or DOCX template.
-ResumeX extracts your details with AI and fills the new template automatically,
+ShiftCV extracts your details with AI and fills the new template automatically,
 giving you an editable LaTeX editor with live PDF preview.
 
 ## Tech Stack
@@ -63,7 +63,7 @@ Open http://localhost:5173
 ## Project Structure
 
 ```
-ResumeX/
+ShiftCV/
 ├── frontend/
 │   ├── src/
 │   │   ├── App.jsx, App.css       # Main app + theme

@@ -43,7 +43,7 @@ export default function EditorView({ latex, onChange, onBack }) {
     <div className="editor-view">
       {/* Toolbar */}
       <div className="editor-toolbar">
-        <span className="logo">ResumeX</span>
+        <span className="logo">ShiftCV</span>
         <button className="btn btn-secondary" onClick={onBack}>
           ← Back
         </button>

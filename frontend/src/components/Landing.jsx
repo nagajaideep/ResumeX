@@ -1,7 +1,7 @@
 export default function Landing() {
   return (
     <section className="hero">
-      <div className="hero-logo">ResumeX</div>
+      <div className="hero-logo">ShiftCV</div>
 
       <h1>
         Transform Your Resume <span>in Seconds</span>

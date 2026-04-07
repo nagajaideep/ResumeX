@@ -1,5 +1,5 @@
 """
-ResumeX — FastAPI backend
+ShiftCV — FastAPI backend
 Two endpoints: /api/transform and /api/compile
 """
 
@@ -14,7 +14,7 @@ import traceback
 
 load_dotenv()
 
-app = FastAPI(title="ResumeX API")
+app = FastAPI(title="ShiftCV API")
 
 # CORS — allow Vite dev server
 app.add_middleware(
